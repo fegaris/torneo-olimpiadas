@@ -39,4 +39,7 @@ public class EquiposTorneo {
     public ArrayList<Equipo> getEquipos(){
         return equipos;
     }
+    public int getTamaño(){
+        return equipos.size();
+    }
 }

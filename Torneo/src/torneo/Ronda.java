@@ -21,8 +21,10 @@ public class Ronda {
         numRonda = 1;
     }
     public void mostrarEquipos(){
+        String tab = "\t";
         for(Equipo e : equipos.getEquipos()){
             System.out.print(e.toString());
+            System.out.print(tab);
         }
     }
     

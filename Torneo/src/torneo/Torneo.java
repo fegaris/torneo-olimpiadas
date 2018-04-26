@@ -19,6 +19,7 @@ public class Torneo {
      */
     public static void main(String[] args) {
         EquiposTorneo equipos = new EquiposTorneo();
+        Ronda r;
         Scanner teclado = new Scanner(System.in);
         int numEquipos;
         
@@ -31,6 +32,11 @@ public class Torneo {
             
         }
         equipos.randomizarEquipos();
+        r = new Ronda(equipos);
+        
+        do{
+        r.mostrarEquipos();
+        }while(equipos.getTamaño()>1);
         
         
         
