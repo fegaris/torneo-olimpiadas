@@ -22,6 +22,7 @@ public class Torneo {
         Ronda r;
         Scanner teclado = new Scanner(System.in);
         int numEquipos;
+        String continuar;
         
         do{
         System.out.print("Introduce el numero de equipos de entre 6 y 12 equipos: ");
@@ -34,8 +35,11 @@ public class Torneo {
         equipos.randomizarEquipos();
         r = new Ronda(equipos);
         
-        do{
         r.mostrarEquipos();
+        teclado.nextLine();
+        do{
+            teclado.nextLine();
+            System.out.println("fin");
         }while(equipos.getTamaño()>1);
         
         

@@ -25,7 +25,7 @@ public class Enfrentamiento {
         res2 = calcularResultado();
     }
     private int calcularResultado(){
-        return (int) (Math.random() * 5) + 1;
+        return (int) (Math.random() * 6);
     }
 
     public int getRes1() {
