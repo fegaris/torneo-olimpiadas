@@ -29,7 +29,14 @@ public class EquiposTorneo {
     public void eliminarEquipo(int indice){
         equipos.remove(indice);
     }
-    public void ordenarEquipos(){
+    public void randomizarEquipos(){
             Collections.shuffle(equipos);
         }
+    public Equipo getEquipo(int indice){
+        return equipos.get(indice);
+    }
+    
+    public ArrayList<Equipo> getEquipos(){
+        return equipos;
+    }
 }

@@ -25,10 +25,13 @@ public class Torneo {
         do{
         System.out.print("Introduce el numero de equipos de entre 6 y 12 equipos: ");
         numEquipos = teclado.nextInt();
-        }while(numEquipos >= 6 && numEquipos <= 12);
-        for(int i = 0; i<=numEquipos; i++){
-            equipos.añadirEquipo(new Equipo("Equipo "+ (char) ('A' + i)));
+        }while(!(numEquipos >= 6 && numEquipos <= 12));
+        for(int i = 0; i<numEquipos; i++){
+            equipos.añadirEquipo(new Equipo("Equipo " + (char) ('A' + i)));
+            
         }
+        equipos.randomizarEquipos();
+        
         
         
     }

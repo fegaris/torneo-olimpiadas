@@ -35,5 +35,12 @@ public class Enfrentamiento {
     public int getRes2() {
         return res2;
     }
+    public Equipo getGanador(){
+        if(res1>= res2){
+            return e1;
+        }else{
+            return e2;
+        }
+    }
     
 }
